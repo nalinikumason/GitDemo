@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="Academy.FrameworkPractice.ValidateAssertion">
+        <methods>
+          <include name="Config"/>
+          <include name="ValidateText"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.FrameworkPractice.ValidateAssertion -->
+      <class name="Academy.FrameworkPractice.UITestCases">
+        <methods>
+          <include name="config"/>
+          <include name="PageNavigation" invocation-numbers="0"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- Academy.FrameworkPractice.UITestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

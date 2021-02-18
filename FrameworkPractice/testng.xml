@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<listeners>
+<listener class-name="Academy.FrameworkPractice.Listeners"></listener>
+</listeners>
+
+  <test name="Test">
+    <classes>
+      <class name="Academy.FrameworkPractice.AppTest"/>
+      </classes>
+      </test>
+      
+      <test name="UITestCasesTest">
+       <classes>
+       <class name="Academy.FrameworkPractice.UITestCases"/>
+       </classes>
+       </test>
+       
+       <test name="ValidateTest">
+       <classes>
+       <class name="Academy.FrameworkPractice.ValidateAssertion"/>
+        </classes>
+        </test>
+ 
+</suite> <!-- Suite -->

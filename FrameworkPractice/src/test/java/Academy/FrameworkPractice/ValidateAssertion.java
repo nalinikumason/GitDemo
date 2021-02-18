@@ -1,0 +1,45 @@
+package Academy.FrameworkPractice;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import junit.framework.Assert;
+import pageobjects.LandingPage;
+import resources.Base;
+
+public class ValidateAssertion extends Base {
+	
+	LandingPage L;
+
+	public WebDriver driver;
+	@BeforeTest
+	public void Config() throws Exception{
+		
+		driver=InitializeDriver();
+		driver.get(prop.getProperty("url"));
+		
+	}
+	
+	@Test(priority=1)
+	public void ValidateText(){
+		 L=new LandingPage(driver);
+		//L.getValentineLink().getText();
+		Assert.assertEquals("Valentine's Day Gift Shop", L.getValentineLink().getText());
+		
+	}
+	
+	@Test(priority=2)
+	public void ValidateTextField(){
+		//L.getReturnsOrders().isDisplayed();
+		Assert.assertTrue(L.getReturnsOrders().isDisplayed());
+	}
+	
+	@AfterTest
+	public void teardown(){
+		driver.close();
+	}
+	
+	
+}

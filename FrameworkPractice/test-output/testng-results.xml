@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="70805" started-at="2021-02-13T17:30:39Z" finished-at="2021-02-13T17:31:50Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="16" started-at="2021-02-13T17:30:39Z" finished-at="2021-02-13T17:30:39Z">
+    </test> <!-- Test -->
+    <test name="ValidateTest" duration-ms="56761" started-at="2021-02-13T17:30:39Z" finished-at="2021-02-13T17:31:36Z">
+      <class name="Academy.FrameworkPractice.ValidateAssertion">
+        <test-method status="PASS" signature="Config()[pri:0, instance:Academy.FrameworkPractice.ValidateAssertion@1e20588]" name="Config" is-config="true" duration-ms="48352" started-at="2021-02-13T09:30:39Z" finished-at="2021-02-13T09:31:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Config -->
+        <test-method status="FAIL" signature="ValidateText()[pri:0, instance:Academy.FrameworkPractice.ValidateAssertion@1e20588]" name="ValidateText" duration-ms="4212" started-at="2021-02-13T09:31:27Z" finished-at="2021-02-13T09:31:32Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[Valentine's Day Gift Shop]> but was:<[Discover Black History Makers]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<[Valentine's Day Gift Shop]> but was:<[Discover Black History Makers]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at Academy.FrameworkPractice.ValidateAssertion.ValidateText(ValidateAssertion.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateText -->
+        <test-method status="PASS" signature="ValidateTextField()[pri:0, instance:Academy.FrameworkPractice.ValidateAssertion@1e20588]" name="ValidateTextField" duration-ms="105" started-at="2021-02-13T09:31:34Z" finished-at="2021-02-13T09:31:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTextField -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.FrameworkPractice.ValidateAssertion@1e20588]" name="teardown" is-config="true" duration-ms="1426" started-at="2021-02-13T09:31:34Z" finished-at="2021-02-13T09:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.FrameworkPractice.ValidateAssertion -->
+    </test> <!-- ValidateTest -->
+    <test name="UITestCasesTest" duration-ms="70789" started-at="2021-02-13T17:30:39Z" finished-at="2021-02-13T17:31:50Z">
+      <class name="Academy.FrameworkPractice.UITestCases">
+        <test-method status="PASS" signature="config()[pri:0, instance:Academy.FrameworkPractice.UITestCases@1d9d4b]" name="config" is-config="true" duration-ms="56683" started-at="2021-02-13T09:30:39Z" finished-at="2021-02-13T09:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method status="PASS" signature="PageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Academy.FrameworkPractice.UITestCases@1d9d4b]" name="PageNavigation" duration-ms="9508" started-at="2021-02-13T09:31:36Z" data-provider="getdata" finished-at="2021-02-13T09:31:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nalini@123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Refund]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageNavigation -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Academy.FrameworkPractice.UITestCases@1d9d4b]" name="TearDown" is-config="true" duration-ms="4580" started-at="2021-02-13T09:31:45Z" finished-at="2021-02-13T09:31:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Academy.FrameworkPractice.UITestCases -->
+    </test> <!-- UITestCasesTest -->
+  </suite> <!-- Suite -->
+</testng-results>
