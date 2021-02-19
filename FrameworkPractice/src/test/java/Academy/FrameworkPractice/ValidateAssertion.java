@@ -28,6 +28,8 @@ public class ValidateAssertion extends Base {
 		//L.getValentineLink().getText();
 		Assert.assertEquals("Valentine's Day Gift Shop", L.getValentineLink().getText());
 	    System.out.println("Text is matching");
+	    System.out.println("Text is perfect");
+	    System.out.println("Text is displaying");
 		
 	}
 	
