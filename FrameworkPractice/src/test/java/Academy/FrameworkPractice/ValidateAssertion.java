@@ -39,6 +39,13 @@ public class ValidateAssertion extends Base {
 		Assert.assertTrue(L.getReturnsOrders().isDisplayed());
 	}
 	
+	@Test(priority=3)
+	public void ValidateTextbox(){
+		
+		System.out.println("TextBox is displaying");
+		
+	}
+	
 	@AfterTest
 	public void teardown(){
 		driver.close();
