@@ -46,6 +46,14 @@ public class ValidateAssertion extends Base {
 		
 	}
 	
+	@Test(priority=4)
+    public void ValidateDropbox(){
+		
+		System.out.println("DropBox is displaying");
+		
+	}
+	
+	
 	@AfterTest
 	public void teardown(){
 		driver.close();
